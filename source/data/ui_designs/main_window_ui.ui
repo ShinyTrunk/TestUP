@@ -370,7 +370,7 @@
 	gridline-color: #176B87;
 }
 #results_table::section{
-	border: 1px solid #176B87;
+	border: 2px solid #176B87;
 }
 .QHeaderView{
 	background-color: #EEF5FF;
@@ -436,6 +436,9 @@
           </property>
           <property name="autoScroll">
            <bool>true</bool>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
           </property>
           <property name="tabKeyNavigation">
            <bool>false</bool>

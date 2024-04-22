@@ -200,7 +200,7 @@ class Ui_MainWindow(object):
 "    gridline-color: #176B87;\n"
 "}\n"
 "#results_table::section{\n"
-"    border: 1px solid #176B87;\n"
+"    border: 2px solid #176B87;\n"
 "}\n"
 ".QHeaderView{\n"
 "    background-color: #EEF5FF;\n"
@@ -249,6 +249,7 @@ class Ui_MainWindow(object):
         self.results_table.setToolTipDuration(-1)
         self.results_table.setAutoFillBackground(False)
         self.results_table.setAutoScroll(True)
+        self.results_table.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.results_table.setTabKeyNavigation(False)
         self.results_table.setProperty("showDropIndicator", False)
         self.results_table.setDragDropOverwriteMode(False)
